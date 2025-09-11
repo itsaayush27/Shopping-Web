@@ -1,0 +1,197 @@
+/* =========================
+   Global Styles
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f8f8f8, #e0e0e0);
+  background: url("https://t3.ftcdn.net/jpg/05/35/13/82/360_F_535138292_62ZnI4Hcw37J8Jaeg4E9TzJwUciCwSnp.jpg")no-repeat center center/cover;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   Header
+========================= */
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  color: #f76c6c;
+}
+
+/* =========================
+   Signup Form
+========================= */
+h2 {
+  font-size: 28px;
+  margin-top: 40px;
+  color: #111;
+}
+
+form#signupForm {
+  width: 90%;
+  max-width: 450px;
+  margin: 30px auto 60px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+form input {
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+form input:focus {
+  border-color: #f76c6c;
+  box-shadow: 0 0 5px rgba(247,108,108,0.5);
+  outline: none;
+}
+
+form button {
+  padding: 12px 20px;
+  background-color: #f76c6c;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #ff4c4c;
+}
+
+.error {
+  color: #ff4c4c;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  background: #111;
+  color: #fff;
+  margin-top: auto;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 40px 30px;
+}
+
+.footer-brand h3 {
+  font-size: 24px;
+  color: #f76c6c;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.footer-contact h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #333;
+  font-size: 14px;
+  background: #000;
+  color: #ccc;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
+
+  form#signupForm {
+    padding: 30px 20px;
+  }
+}

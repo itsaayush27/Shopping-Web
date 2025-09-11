@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MeShop - Login</title>
+  <link rel="stylesheet" href="../CSS/login.css">
+<link rel="icon" type="image/png" href="https://thumbs.dreamstime.com/b/e-commerce-website-icon-shopping-cart-symbol-traditional-store-awning-e-commerce-website-icon-shopping-cart-symbol-401089826.jpg">
+</head>
+<body class="login-body">
+  <header>
+  <h1>FASHION STORE</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Signup</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+  <div class="login-overlay">
+    <div class="login-container">
+      <h2>Welcome Back 👋</h2>
+      <p class="subtitle">Login to continue shopping</p>
+      <form id="loginForm">
+        <!-- Email -->
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <small id="emailError" class="error"></small>
+
+        <!-- Password -->
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <small id="passwordError" class="error"></small>
+
+        <!-- Submit -->
+        <button type="submit" class="login-btn">Login</button>
+        <p id="loginError" class="error"></p>
+      </form>
+      <p class="signup-text">Don’t have an account? <a href="signup.html">Signup here</a></p>
+    </div>
+  </div>
+
+  <footer>
+  <div class="footer-container">
+    <!-- Brand + Description -->
+    <div class="footer-brand">
+      <h3>FASHION STORE.</h3>
+      <p>Your one-stop destination for trending fashion & accessories.</p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: support@fashionstore.com</p>
+      <p>Phone: +91 123 456 7890</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram' style='color:#bc3535'></i></a>
+        <a href="#" aria-label="Facebook"><i class='bx bxl-facebook-circle' style='color:#3b5998'></i></a>
+        <a href="#" aria-label="Twitter"><i class='bx bxl-twitter' style='color:#1da1f2'></i></a>
+        <a href="#" aria-label="Pinterest"><i class='bx bxl-pinterest' style='color:#bd081c'></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Bottom -->
+  <div class="footer-bottom">
+    <p>© 2025 FASHION STORE. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="../JS/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment - FASHION STORE</title>
+  <link rel="stylesheet" href="../CSS/payment.css">
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script> <!-- Razorpay Checkout SDK -->
+</head>
+<body>
+  <nav>
+    <div class="brand">
+      <a href="shop.html">FASHION STORE.</a>
+    </div>
+    <div class="nav-items">
+      <span id="userDisplay">Hello, Guest</span>
+      <a href="cart.html">My Cart</a>
+    </div>
+  </nav>
+
+  <main>
+    <h2>Payment Page</h2>
+
+    <div id="paymentSummary" class="cart-summary"></div>
+
+    <div id="totalAmount" class="totals">
+      <p id="subtotal">Subtotal: ₹0</p>
+      <p id="gst">GST (5%): ₹0</p>
+      <p id="grandTotal">Total: ₹0</p>
+    </div>
+
+    <button id="payBtn" class="payBtn">Pay Now</button>
+  </main>
+
+  <script src="../JS/payment.js"></script>
+</body>
+</html>

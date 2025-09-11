@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FASHION STORE.</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/footer.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="icon" type="image/png" href="https://thumbs.dreamstime.com/b/e-commerce-website-icon-shopping-cart-symbol-traditional-store-awning-e-commerce-website-icon-shopping-cart-symbol-401089826.jpg">
+  </head>
+  <body>
+    
+    <nav>
+      <div class="brand">
+        <a href="/">FASHION STORE.</a>
+      </div>
+      <div class="nav-items">
+                <a href="login.html" id="userDisplay">Login</a>
+                <a href="../HTML/index.html">Home</a>
+                <a href="../HTML/signup.html">Signup</a>
+           <a href="#" id="logoutBtn">Logout</a>
+    <a href="cart.html" id="cartLink">My Cart</a>
+       </div>
+    </nav>
+    <main>
+      <aside>
+        
+        <section>
+          <title>Colors</title>
+          <ul>
+            <li>
+              <input id="red" type="checkbox" name="color" />
+              <label for="red">Red</label>
+            </li>
+            <li>
+              <input id="blue" type="checkbox" name="color" />
+              <label for="blue">Blue</label>
+            </li>
+            <li>
+              <input id="green" type="checkbox" name="color" />
+              <label for="green">Green</label>
+            </li>
+            <li>
+              <input id="black" type="checkbox" name="color" />
+              <label for="black">Black</label>
+            </li>
+            <li>
+              <input id="white" type="checkbox" name="color" />
+              <label for="white">White</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <title>Sizes</title>
+          <ul>
+            <li>
+              <input id="s" type="checkbox" name="color" />
+              <label for="s">S</label>
+            </li>
+            <li>
+              <input id="m" type="checkbox" name="color" />
+              <label for="m">M</label>
+            </li>
+            <li>
+              <input id="l" type="checkbox" name="color" />
+              <label for="l">L</label>
+            </li>
+            <li>
+              <input id="xl" type="checkbox" name="color" />
+              <label for="xl">XL</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <title>Rating</title>
+          <input
+            type="range"
+            id="range"
+            min="0"
+            max="5"
+            value="0"
+            list="values"
+          />
+          <datalist id="values">
+            <option value="0" label="0"></option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5" label="5"></option>
+          </datalist>
+        </section>
+        <section>
+          <title>Price Range</title>
+          <ul>
+            <li>
+              <input id="0-25" type="checkbox" name="prange" />
+              <label for="0-25">0 to 300</label>
+            </li>
+            <li>
+              <input id="25-50" type="checkbox" name="prange" />
+              <label for="25-50">500 to 1000</label>
+            </li>
+            <li>
+              <input id="50-100" type="checkbox" name="prange" />
+              <label for="50-100">1000 to 3000</label>
+            </li>
+            <li>
+              <input id="100on" type="checkbox" name="prange" />
+              <label for="100on">7000 onwards</label>
+            </li>
+          </ul>
+        </section>
+      </aside>
+      <main-content>
+        <input type="text" placeholder="Search" />
+       <div class="filters">
+    <div class="filter active" data-filter="all">All</div>
+    <div class="filter" data-filter="mens">Mens</div>
+    <div class="filter" data-filter="womens">Womens</div>
+    <div class="filter" data-filter="jewellery">Jewellery</div>
+    <div class="filter" data-filter="electronics">Electronics</div>
+  </div>
+         <section data-category="mens" class="active">
+          <title>Men's Clothing</title>
+          <div class="items">
+            <div class="item">
+              <img src="https://assets.ajio.com/medias/sys_master/root/20240507/mdc0/663a557116fd2c6e6af0ef6f/-473Wx593H-467293008-brown-MODEL.jpg" alt="Item" />
+              <div class="info">
+                <div class="row">
+                  <div class="price">INR-700</div>
+                  <div class="sized">S,M,L</div>
+                </div>
+                <div class="colors">
+                  Colors:
+                  <div class="row">
+                    <div class="circle" style="background-color: #000"></div>
+                    <div class="circle" style="background-color: #4938af"></div>
+                    <div class="circle" style="background-color: #203d3e"></div>
+                  </div>
+                </div>
+                <div class="row">Rating:5.5</div>
+                 <div class="desc">Brown casual cotton t-shirt perfect for daily wear.</div>
+              </div>
+            <button class="addBtn">Add to Cart</button>
+            </div>
+            <div class="item">
+              <img src="https://wrogn.com/cdn/shop/files/Picasso-Gone-Wrogn-Back-Printed-T-Shirt.webp?v=1744697737" alt="Item" />
+              <div class="info">
+                <div class="row">
+                  <div class="price">INR-500</div>
+                  <div class="sized">S,M,L</div>
+                </div>
+                <div class="colors">
+                  Colors:
+                  <div class="row">
+                    <div class="circle" style="background-color: #000"></div>
+                    <div class="circle" style="background-color: #4938af"></div>
+                    <div class="circle" style="background-color: #203d3e"></div>
+                  </div>
+                </div>
+                <div class="row">Rating:4.0</div>
+                <div class="desc">Stylish printed T-shirt with bold back graphic design.</div>
+              </div>
+          <button class="addBtn">Add to Cart</button>
+            </div>
+            <div class="item">
+              <img src="https://assets.ajio.com/medias/sys_master/root/20231227/DMTd/658b558bddf7791519ed30ab/-473Wx593H-466919468-black-MODEL.jpg" alt="Item" />
+              <div class="info">
+                <div class="row">
+                  <div class="price">INR-800</div>
+                  <div class="sized">S,M,L</div>
+                </div>
+                <div class="colors">
+                  Colors:
+                  <div class="row">
+                    <div class="circle" style="background-color: #000"></div>
+                    <div class="circle" style="background-color: #4938af"></div>
+                    <div class="circle" style="background-color: #203d3e"></div>
+                  </div>
+                </div>
+                <div class="row">Rating:4.1</div>
+               <div class="desc">Elevate your everyday style with these classic black boots.</div>
+              </div>
+         <button class="addBtn">Add to Cart</button>
+            </div>
+            <div class="item">
+              <img src="https://kingdomofwhite.com/cdn/shop/files/pdp-Coast-1_78ef6863-fc70-43c9-8163-424e404cef8c-866274.jpg?v=1752650483" alt="Item" />
+              <div class="info">
+                <div class="row">
+                  <div class="price">INR-800</div>
+                  <div class="sized">S,M,L</div>
+                </div>
+                <div class="colors">
+                  Colors:
+                  <div class="row">
+                    <div class="circle" style="background-color: #000"></div>
+                    <div class="circle" style="background-color: #4938af"></div>
+                    <div class="circle" style="background-color: #203d3e"></div>
+                  </div>
+                </div>
+                <div class="row">Rating:4.5</div>
+                <div class="desc">Comfortable white linen pant suitable for all occasions.</div>
+              </div>
+          <button class="addBtn">Add to Cart</button>
+            </div>
+            <div class="item">
+              <img src="https://nobero.com/cdn/shop/files/MenCordsNew1.jpg?v=1725606181" alt="Item" />
+              <div class="info">
+                <div class="row">
+                  <div class="price">INR-1000</div>
+                  <div class="sized">S,M,L</div>
+                </div>
+                <div class="colors">
+                  Colors:
+                  <div class="row">
+                    <div class="circle" style="background-color: #000"></div>
+                    <div class="circle" style="background-color: #4938af"></div>
+                    <div class="circle" style="background-color: #203d3e"></div>
+                  </div>
+                </div>
+                <div class="row">Rating:5.0</div>
+                <div class="desc">Effortless and elegant, this black cord set offers a sleek, coordinated look with minimal fuss.</div>
+              </div>
+        <button class="addBtn">Add to Cart</button>
+            </div>
+          </div>
+        </section>
+
+      <section data-category="womens">
+  <title>Women's Clothing</title>
+  <div class="items">
+    <div class="item">
+      <img src="https://safaaworld.com/cdn/shop/articles/Blog-Image_b21adffc-7377-40da-963c-8d43a00cd714.jpg?v=1726489198" alt="Item" />
+      <div class="info">
+        <div class="row">
+          <div class="price">INR-7000</div>
+          <div class="sized">S,M,L</div>
+        </div>
+        <div class="colors">
+          Colors:
+          <div class="row">
+            <div class="circle" style="background-color: #000"></div>
+            <div class="circle" style="background-color: #4938af"></div>
+            <div class="circle" style="background-color: #203d3e"></div>
+          </div>
+        </div>
+        <div class="row">Rating:4.1</div>
+        <div class="desc">Elegant traditional black dress with intricate embroidery, perfect for festive and formal occasions.</div>
+      </div>
+      <button class="addBtn">Add to Cart</button>
+      <div class="desc">Crafted for the connoisseur of traditional elegance, this black dress features a canvas of deep, rich black, brought to life with intricate, hand-embroidered patterns. Perfect for gala events and festive celebrations, it is a timeless statement piece.</div>
+    </div>
+
+    <div class="item">
+      <img src="https://img.tatacliq.com/images/i20//437Wx649H/MP000000023735249_437Wx649H_202409202155391.jpeg" alt="Item" />
+      <div class="info">
+        <div class="row">
+          <div class="price">INR-700</div>
+          <div class="sized">S,M,L</div>
+        </div>
+        <div class="colors">
+          Colors:
+          <div class="row">
+            <div class="circle" style="background-color: #000"></div>
+            <div class="circle" style="background-color: #4938af"></div>
+            <div class="circle" style="background-color: #203d3e"></div>
+          </div>
+        </div>
+        <div class="row">Rating:4.2</div>
+        <div class="desc">Elegant floral summer dress, lightweight and perfect for casual outings.</div>
+      </div>
+      <button class="addBtn">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="https://www.beatitude.in/cdn/shop/articles/DSC_2173_720x_dec1d27e-c2a7-4ce7-8b21-654c0ca12e43.webp?v=1675162397" alt="Item" />
+      <div class="info">
+        <div class="row">
+          <div class="price">INR-1200</div>
+          <div class="sized">S,M,L</div>
+        </div>
+        <div class="colors">
+          Colors:
+          <div class="row">
+            <div class="circle" style="background-color: #000"></div>
+            <div class="circle" style="background-color: #4938af"></div>
+            <div class="circle" style="background-color: #203d3e"></div>
+          </div>
+        </div>
+        <div class="row">Rating:4.2</div>
+        <div class="desc">Casual long-sleeve top with soft fabric for daily comfort.</div>
+      </div>
+      <button class="addBtn">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="https://suvidhafashion.com/cdn/shop/files/RAZIA-1.jpg?v=1741088897&width=500" alt="Item" />
+      <div class="info">
+        <div class="row">
+          <div class="price">INR-900</div>
+          <div class="sized">S,M,L</div>
+        </div>
+        <div class="colors">
+          Colors:
+          <div class="row">
+            <div class="circle" style="background-color: #000"></div>
+            <div class="circle" style="background-color: #4938af"></div>
+            <div class="circle" style="background-color: #203d3e"></div>
+          </div>
+        </div>
+        <div class="row">Rating:5.0</div>
+        <div class="desc">Stylish kurti with modern prints, comfortable for everyday wear.</div>
+      </div>
+      <button class="addBtn">Add to Cart</button>
+    </div>
+
+    <div class="item">
+      <img src="https://www.anantexports.in/cdn/shop/products/WhatsAppImage2023-02-25at5.59.32PM_2.jpg?v=1677491606&width=1946" alt="Item" />
+      <div class="info">
+        <div class="row">
+          <div class="price">INR-1100</div>
+          <div class="sized">S,M,L</div>
+        </div>
+        <div class="colors">
+          Colors:
+          <div class="row">
+            <div class="circle" style="background-color: #000"></div>
+            <div class="circle" style="background-color: #4938af"></div>
+            <div class="circle" style="background-color: #203d3e"></div>
+          </div>
+        </div>
+        <div class="row">Rating:5.0</div>
+        <div class="desc">Flowy maxi dress with vibrant prints, perfect for parties and outings.</div>
+      </div>
+      <button class="addBtn">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+         <section data-category="electronics">
+          <title>Electronics</title>
+          <div class="items">
+            <div class="item">
+              <img src="https://images.samsung.com/in/smartphones/galaxy-s24-ultra/images/galaxy-s24-ultra-highlights-color-titanium-gray-back-mo.jpg?imbypass=true" alt="Item" />
+              <div class="info">
+                <div class="row">
+                  <div class="price">70000</div>
+                </div>
+                <div class="row">Rating:5.5</div>
+                <div class="desc">SAMSUNG S24 Ultra</div>
+              </div>
+              <button class="addBtn">Add to Cart</button>
+
+              <div class="desc">The AI is here with Galaxy.</div>
+            </div>
+            <div class="item">
+              <img src="https://blogassets.airtel.in/wp-content/uploads/2024/10/onur-binay-epM08OIfGqk-unsplash-1.jpg" alt="Item" />
+              <div class="info">
+                <div class="row">
+                  <div class="price">INR-65500</div>
+                </div>
+                <div class="row">Rating:5.5</div>
+                <div class="desc">I-Phone 13</div>
+              </div>
+              <button class="addBtn">Add to Cart</button>
+              <div class="desc">Shoot the world with Apple.</div>
+            </div>
+            <div class="item">
+              <img src="https://helios-i.mashable.com/imagery/articles/06P9Ixd95ujrOs8Sd96g0Go/hero-image.fill.size_1248x702.v1746628362.png" alt="Item" />
+              <div class="info">
+                <div class="row">
+                  <div class="price">INR-25500</div>
+                </div>
+                <div class="row">Rating:4.2</div>
+                <div class="desc">Skullcandy Earpods</div>
+              </div>
+              <button class="addBtn">Add to Cart</button>
+              <div class="desc">Feels the music without feeling worlds noice</div>
+            </div>
+            <div class="item">
+              <img src="https://www.boat-lifestyle.com/cdn/shop/files/Artboard17_1800x.png?v=1724672758" alt="Item" />
+              <div class="info">
+                <div class="row">
+                  <div class="price">INR-8000</div>
+                </div>
+                <div class="row">Rating:5.0</div>
+                <div class="desc">Boat Loud 2.0</div>
+              </div>
+              <button class="addBtn">Add to Cart</button>
+              <div class="desc">Hear the loud music with your inner singer</div>
+            </div>
+            <div class="item">
+              <img src="https://ausha.co.in/cdn/shop/products/B_4c8131b9-f476-4be6-a6dd-353063c79dc4.jpg?v=1703852426" alt="Item" />
+              <div class="info">
+                <div class="row">
+                  <div class="price">INR-60000</div>
+                </div>
+                <div class="row">Rating:5.0</div>
+                <div class="desc">Action Cam Pro</div>
+              </div>
+              <button class="addBtn">Add to Cart</button>
+              <div class="desc">Shoot an unexpected actions and moments of life.</div>
+            </div>
+          </div>
+        </section>
+
+         <section data-category="jewellery">
+          <title>Jewellery</title>
+          <div class="items">
+            <div class="item">
+              <img src="https://m.media-amazon.com/images/I/71RuomGvGTL._UY1100_.jpg" alt="Item" />
+              <div class="info">
+                <div class="row">
+                  <div class="price">85,000</div>
+                  <div class="sized">S,M,L</div>
+                </div>
+                <div class="row">Rating:4.1</div>
+                <div class="desc">Men's Gold Bracelete</div>
+              </div>
+           <button class="addBtn">Add to Cart</button>
+            </div>
+            <div class="item">
+              <img src="https://www.belorojewels.com/cdn/shop/files/bo320011.jpg?v=1719993042&width=1946" alt="Item" />
+              <div class="info">
+                <div class="row">
+                  <div class="price">INR-6500</div>
+                  <div class="sized">S,M,L</div>
+                </div>
+                <div class="row">Rating:3.8</div>
+                <div class="desc">Three pcs Elegance Bracelete</div>
+              </div>
+              <button class="addBtn">Add to Cart</button>
+            </div>
+            <div class="item">
+              <img src="https://www.miabytanishq.com/dw/image/v2/BKCK_PRD/on/demandware.static/-/Sites-Tanishq-product-catalog/default/dwbc6ed3e7/images/Mia/hi-res/3025FFE_1.jpg?sw=480&sh=480" alt="Item" />
+              <div class="info">
+                <div class="row">
+                  <div class="price">INR-70000</div>
+                  <div class="sized">S,M,L</div>
+                </div>
+                <div class="row">Rating:4.2</div>
+                <div class="desc">Beautifull Gold Ring</div>
+              </div>
+              <button class="addBtn">Add to Cart</button>
+            </div>
+            <div class="item">
+              <img src="https://smarsjewelry.com/cdn/shop/files/581.1.jpg?v=1711629199" alt="Item" />
+              <div class="info">
+                <div class="row">
+                  <div class="price">INR-90000</div>
+                  <div class="sized">S,M,L</div>
+                </div>
+                <div class="row">Rating:5.0</div>
+                <div class="desc">GOLD CHAIN</div>
+              </div>
+             <button class="addBtn">Add to Cart</button>
+            </div>
+            <div class="item">
+              <img src="https://www.kalyanjewellers.net/images/menu-banner/brands/laya-2.jpg" alt="Item" />
+              <div class="info">
+                <div class="row">
+                  <div class="price">INR-100000</div>
+                  <div class="sized">S,M,L</div>
+                </div>
+                <div class="row">Rating:5.0</div>
+                <div class="desc">Necklace Set</div>
+              </div>
+              <button class="addBtn">Add to Cart</button>
+            </div>
+          </div>
+        </section>
+        
+      </main-content>
+    </main>
+    <footer>
+  <div class="footer-container">
+    <!-- Brand + Description -->
+    <div class="footer-brand">
+      <h3>FASHION STORE.</h3>
+      <p>Your one-stop destination for trending fashion & accessories.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: support@fashionstore.com</p>
+      <p>Phone: +91 123 456 7890</p>
+     <div class="social-icons">
+  <a href="#" aria-label="Instagram">
+    <i class='bx bxl-instagram' style='color:#bc3535'></i>
+  </a>
+  <a href="#" aria-label="Facebook">
+    <i class='bx bxl-facebook-circle' style='color:#3b5998'></i>
+  </a>
+  <a href="#" aria-label="Twitter">
+    <i class='bx bxl-twitter' style='color:#1da1f2'></i>
+  </a>
+  <a href="#" aria-label="Pinterest">
+    <i class='bx bxl-pinterest' style='color:#bd081c'></i>
+  </a>
+</div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 FASHION STORE. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="../JS/shop.js"></script>
+  </body>
+</html>
